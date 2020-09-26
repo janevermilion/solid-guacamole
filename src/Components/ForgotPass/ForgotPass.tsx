@@ -1,19 +1,16 @@
 import {
     Button,
-    Checkbox,
-    CheckBoxContainer,
     Container,
     Form,
     Input,
-    Label,
     Linkwrapper,
     Logo,
     Title,
-    ContainerWrapper
 } from "./ForgotPassStyle";
 import * as React from "react";
 import {useForm} from "react-hook-form";
 import {Link} from "react-router-dom";
+import ContainerWrapper from "../Container/Container";
 type FormData = {
     login: string;
     password: string;
@@ -73,7 +70,7 @@ export const ForgotPass: React.FC<ForgotPass> = () => {
                     <Input type="email" id='login' name='email' placeholder='логин' ref={register({required: true})}/>
                     <Button type={'submit'}>Отправить</Button>
                     <Linkwrapper>
-                        <Link to="/">Назад</Link>
+                        <Link to="/login">Назад</Link>
                     </Linkwrapper>
                 </Form>
             </Container>

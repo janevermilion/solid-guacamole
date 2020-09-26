@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import logo from '../../img/logo.png';
-import background from '../../img/fon_1.png';
+const logo=require('../../img/logo.png');
+const background = require('../../img/fon_1.png') ;
 
 let mainFont = `
 font-family: Roboto, sans-serif;
@@ -19,24 +19,15 @@ font-size: 12px;
 line-height: 13px;
 color: #FFFFFF;
 text-transform: uppercase;
-text-align:center;
 `
 
 export const Container = styled.div`
 display: flex;
+flex-direction: column;
 justify-content: space-around;
 align-items: center;
 padding-top: 25vh;
 `;
-
-export const ContainerWrapper = styled.div`
-margin: 0 auto;
-background-color: #051c3e;
-background-image: url(${background});
-background-position: center;
-background-repeat: no-repeat;
-height:100vh;
-`
 
 export const Logo = styled.img.attrs(() => ({
     width: '289px',
@@ -44,10 +35,11 @@ export const Logo = styled.img.attrs(() => ({
     src: logo,
     alt: 'CompanyLogo'
 }))`
-max-width: 50%;
+max-width: 70%;
+margin-bottom:40px;
 `
 
-export const LinkWrapper = styled.a`
+export const Linkwrapper = styled.a`
 ${mainFont}
 text-decoration: none;
 margin: 15px 0;

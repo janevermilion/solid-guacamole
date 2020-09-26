@@ -28,13 +28,13 @@ app.use(bodyParser.json());
 let loginRouter = require('./routes/login')(app,passport);
 let protectedRouter = require('./routes/protected')(app, passport);
 const models = require("./models");
-/*
+
 models.sequelize.sync().then(function () {
   console.log('Database created')
 }).catch(function (err) {
   console.log(err, "Something went wrong with the Database Update!")
 });
- */
+
 require('./config/passport.js')(passport, models.user);
 
 app.use(express.static('public'));

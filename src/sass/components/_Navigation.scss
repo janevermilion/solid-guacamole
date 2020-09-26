@@ -1,0 +1,36 @@
+.navigation
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  background-color: $main-background-color;
+  width: 10%;
+  margin: 0 auto;
+  padding: 0;
+}
+.navigation__item
+{
+  display:block;
+  width:100%;
+  :hover
+  {
+    background-color: #072753;
+    color:$button-hover-color;
+    text-decoration:underline;
+  }
+  a{
+    @include mainFont;
+    text-transform: uppercase;
+    font-weight:bold;
+    text-align:left;
+    padding: 30px 5px;
+    width:100%;
+    display:block;
+    :hover
+    {
+      color:green;
+    }
+  }
+}
+
