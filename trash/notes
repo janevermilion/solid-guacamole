@@ -1,0 +1,10 @@
+POSTGRES:
+
+sudo -u postgres psql postgres  -login
+\c sipserver -choose database
+\dt -show all tables
+
+разобраться с получением токена и его верификацией на экспрессе, пока нулевой рек рес
+/*
+"http-proxy-middleware": "^1.0.5",
+*
