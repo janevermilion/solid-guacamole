@@ -1,14 +1,13 @@
 import React from "react";
 import {ContainerWrapper} from "../Container/ContainerStyle";
 import {NavLink} from "react-router-dom";
-//import Header from "../Header/Header";
-const Header = require('../Header/Header')
+import Header from "../Header/Header";
+//const Header = require('../Header/Header')
 
 const Profiles = () => {
     return (
         <ContainerWrapper>
-            <Header>
-            </Header>
+            <Header/>
             <div className={'profiles__container'}>
                 <ul className={'profiles__users'}>
                     <li className={'profile__users__item'}><NavLink to={'/chats/1'}>Lisa</NavLink></li>
@@ -24,7 +23,7 @@ const Profiles = () => {
                             <p className={'profiles__profile--town'}>Town: Spb</p>
                             <p className={'profiles__profile--status'}>Status: alive</p>
                         </div>
-                        <div  className={'profiles__profile--img'}/>
+                        <div className={'profiles__profile--img'}/>
                     </div>
                     <div className={'profiles__tasks'}>
                         <table className={'profile__table'}>
@@ -36,6 +35,7 @@ const Profiles = () => {
                                 <th className={'profile__th3'}>Дата окончания</th>
                             </tr>
                             </thead>
+                            <tbody>
                             <tr>
                                 <td className={'profile__td1'}>1</td>
                                 <td className={'profile__td1'}>Помыть посуду</td>
@@ -54,6 +54,8 @@ const Profiles = () => {
                                 <td className={'profile__td2'}>25.05.2012</td>
                                 <td className={'profile__td3'}>25.05.2013</td>
                             </tr>
+                            </tbody>
+
                         </table>
                     </div>
                 </div>
