@@ -1,12 +1,12 @@
 import React, {ReactNode} from "react";
-import {Container} from "./ContainerStyle"
+import {ContainerWrapper} from "./ContainerStyle"
 
 
-const ContainerWrapper:() => JSX.Element = () => {
+const ContainerWrapperw:() => JSX.Element = () => {
     return(
-        <Container/>
+        <ContainerWrapper/>
     )
 }
 
 
-export default ContainerWrapper;
+export default ContainerWrapperw;

@@ -8,3 +8,4 @@ sudo -u postgres psql postgres  -login
 /*
 "http-proxy-middleware": "^1.0.5",
 *
+  "proxy": "http://localhost:9000",

@@ -1,8 +1,10 @@
 import React from "react";
-import ContainerWrapper from "../Container/Container";
+import {ContainerWrapper} from "../Container/ContainerStyle";
+
 
 let Chat= () => {
-    <ContainerWrapper>
+    return(
+        <ContainerWrapper>
         <div className={'chat__container'}>
             <ul className={'chats__list'}>
                 <li className={'chat__list__item'}>Alexey, Sergey</li>
@@ -18,13 +20,14 @@ let Chat= () => {
                         <p className={'chat__message__date'}>12.05.08</p>
                     </div>
                 </div>
-                <div classname={'message__wrapper'}>
+                <div className={'message__wrapper'}>
                     <textarea name="message" id="message" cols={30} rows={10} placeholder={'Your message'}/>
                     <button className={'button_send'}>Send</button>
                 </div>
             </div>
         </div>
     </ContainerWrapper>
+    )
 }
 
 export default Chat;

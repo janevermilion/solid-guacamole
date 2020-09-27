@@ -1,0 +1,108 @@
+.profiles__container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.profiles__users
+{
+  @extend .navigation;
+  height: 90vh;
+  a
+  {
+    font-size: 10px;
+    padding: 20px 0 20px 10px;
+  }
+}
+.profile__users__item
+{
+  @extend .navigation__item;
+}
+.profile__user
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px;
+  min-width: 80%;
+}
+.profiles__profile
+{
+  border: 1px solid $button-hover-color;
+  max-height: 30vh;
+  margin-bottom: 20px;
+  background-color: $back-background-color;
+  border-radius: 5px;
+  min-width: 80%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  &--info
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  &--name{
+    @include mainFont($font-size*2);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  &--age, &--town, &--status
+  {
+    @include mainFont($font-size *1.2);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  &--img
+  {
+    width: 20vh;
+    height: 20vh;
+    background-color: transparent;
+    background: url("../../img/pepe.png");
+    border-radius: 50%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+  }
+}
+.profiles__tasks
+{
+  border: 1px solid $button-hover-color;
+  background-color: $back-background-color;
+  border-radius: 5px;
+  min-height: 50vh;
+  padding: 20px;
+}
+
+table.profile__table {
+  color: $main-font-color;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  border-collapse: collapse;
+  @include mainFont($font-size);
+}
+table.profile__table td, table.profile__table th {
+  border-left: 1px solid $button-hover-color;
+  padding: 10px 4px;
+}
+table.profile__table td:nth-child(even) {
+  background: $back-background-color;
+}
+table.profile__table thead {
+  border-bottom: 1px solid $button-hover-color;
+}
+table.profile__table thead th {
+  font-weight: bold;
+  border-left: 1px solid $button-hover-color;
+}
+table.profile__table thead th:first-child {
+  border-left: none;
+}
+table.profile__table td:first-child {
+  border-left: none;
+}

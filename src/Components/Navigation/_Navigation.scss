@@ -2,35 +2,33 @@
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   list-style: none;
   background-color: $main-background-color;
   width: 10%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  height: 100vh;
+  border-right: 1px solid $button-hover-color;
 }
 .navigation__item
 {
-  display:block;
+  display:flex;
   width:100%;
+  border-bottom: 1px solid $button-hover-color;
+  border-radius:5px;
   :hover
   {
     background-color: #072753;
-    color:$button-hover-color;
-    text-decoration:underline;
   }
   a{
-    @include mainFont;
+    @include mainFont($font-size);
     text-transform: uppercase;
     font-weight:bold;
     text-align:left;
-    padding: 30px 5px;
+    padding: 50px 10px;
     width:100%;
     display:block;
-    :hover
-    {
-      color:green;
-    }
   }
 }
 

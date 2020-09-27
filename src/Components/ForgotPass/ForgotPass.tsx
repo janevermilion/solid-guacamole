@@ -10,7 +10,7 @@ import {
 import * as React from "react";
 import {useForm} from "react-hook-form";
 import {Link} from "react-router-dom";
-import ContainerWrapper from "../Container/Container";
+import {ContainerWrapper} from "../Container/ContainerStyle";
 type FormData = {
     login: string;
     password: string;

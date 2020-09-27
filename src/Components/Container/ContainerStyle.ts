@@ -6,7 +6,7 @@ const background = require('../../img/fon_1.png') ;
 
 
 
-export const Container = styled.div`
+export const ContainerWrapper = styled.div`
 margin: 0 auto;
 background-color: #051c3e;
 background-image: url(${background});

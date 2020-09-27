@@ -1,5 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "keyframes";
-@import "components/App";
-@import "components/Navigation";
+@import "../App";
+@import "../Components/Profiles/Profiles";
+@import "../Components/Navigation/Navigation";
+@import "../Components/Profiles/Profiles";
